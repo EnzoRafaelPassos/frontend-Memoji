@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #F9F9F9;
+}
+
+/* header */
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-actions {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 30px;
+    justify-content: space-around
+}
+
+.icon-contact {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.background-contact {
+    position: absolute;
+
+}
+
+/* body */
+
+.content-apple {
+    margin-bottom: 20px;
+}
+
+.content-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    text-align: center;
+}
+
+.button-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.button-purple {
+    background-color: #6610f2;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: none;
+    color: #FFFF;
+}
+
+.button-white {
+    background-color: #FFFF;
+    border: 1px solid #EAEAEA;
+}
+
+.button-purple,
+.button-white {
+    width: 300px;
+    height: 30px;
+
+}
+
+.background-top-emojis,
+.background-bottom-emojis {
+    display: none;
+}
+
+
+.body-phrases {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.content-phrases {
+    margin-bottom: 30px;
+}
+
+.content-title-phrases {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.icon-title {
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .background-top-emojis {
+        display: grid;
+        grid-template-rows: 80px;
+        grid-template-columns: 60% 10%;
+        justify-content: center;
+        align-content: center;
+        margin-top: 50px;
+    }
+
+
+    .background-bottom-emojis {
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-columns: 30% 30% 10%;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 200px;
+    }
+    
+    .img-raze {
+        margin-top: 100px;
+    }
+
+    .body-phrases {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 100px;
+    }
+
+    .content-phrases {
+        width: 400px;
+        
+    }
+}
